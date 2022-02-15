@@ -1,3 +1,29 @@
 .text-purple{
     color: #a200ff;
 }
+
+.btn-purple{
+    background-color: #a200ff;
+    color: white;
+    box-shadow: none;
+}
+
+.btn-purple:focus{
+    box-shadow: none;
+}
+
+.btn-purple:hover{
+    color: white;
+    background-color: #7a00c0;
+}
+
+.btn-outline-purple{
+    border: 2px solid #a200ff;
+    color: #a200ff;
+    background-color: transparent;
+}
+
+.btn-outline-purple:hover{
+    background-color: #a200ff;
+    color: white;
+}

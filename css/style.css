@@ -38,3 +38,15 @@ body{
     background-color: white;
     margin-right: 5px;
 }
+
+@media screen and (max-width:767px) {
+    .header-margin{
+        margin-top: 90px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .header-margin{
+        margin-top: 50px;
+    }
+}

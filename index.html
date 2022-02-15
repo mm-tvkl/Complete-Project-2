@@ -8,14 +8,19 @@
     <!-- Bootstrap and Bootstrap Icon -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- main-stlye.css File -->
+    <link rel="stylesheet" href="./css/main-style.css">
+
     <!-- My Style.css File -->
     <link rel="stylesheet" href="./css/style.css">
+
     <title>Project</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow">
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow position-fixed top-0 end-0 start-0">
         <div class="container">
             <a class="navbar-brand" href="#">myProject.com</a>
             <button class="navbar-toggler" type="button">
@@ -27,7 +32,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">صفحه ی اصلی</a>
                     </li>
-                    
+
                     <!-- ITEM 2 -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#">
@@ -35,23 +40,23 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item m-dropdown-item" href="#">
-                                <i class="bi bi-box me-1"></i>
-                                محصول اول
-                            </a></li>
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول اول
+                                </a></li>
                             <li><a class="dropdown-item m-dropdown-item" href="#">
-                                <i class="bi bi-box me-1"></i>
-                                محصول دوم
-                            </a></li>
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول دوم
+                                </a></li>
                             <li><a class="dropdown-item m-dropdown-item" href="#">
-                                <i class="bi bi-box me-1"></i>
-                                محصول سوم
-                            </a></li>
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول سوم
+                                </a></li>
                         </ul>
                     </li>
 
                     <!-- ITEM 3 -->
                     <li class="nav-item"><a class="nav-link" href="#">تماس با ما</a></li>
-                    
+
                     <!-- ITEM 4 -->
                     <li class="nav-item">
                         <a href="#" class="nav-link">درباره ما</a>
@@ -60,6 +65,28 @@
             </div>
         </div>
     </nav>
+
+    <!-- Header -->
+    <header class="container-fluid header-margin">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                    <div>
+                        <h4 class="fw-bold">لورم ایپسوم متن ساختگی</h4>
+                        <h5 class="my-4 text-purple fw-bold">myProject.com</h5>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                        <a href="#" class="btn btn-purple mx-1 mt-2">لورم ایپسوم</a>
+                        <a href="#" class="btn btn-outline-dark mx-1 mt-2">لورم ایپسوم</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+                    <img class="img-fluid" src="./img/Designer_Flatline.png" alt="Designer Pic">
+                </div>
+            </div>
+        </div>
+    </header>
+
 </body>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
