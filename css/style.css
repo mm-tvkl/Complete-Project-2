@@ -14,4 +14,27 @@
 
 body{
     font-family: "vazir";
+    background-color: #eee;
+}
+
+/* Navbar Style */
+.dropdown-toggle:hover + .dropdown-menu,
+.dropdown-menu:hover{
+    display: block;
+}
+
+.dropdown-menu{
+    overflow: hidden;
+    border-radius: 0;
+    border: 0;
+    border-top: 4px solid #a200ff;
+}
+
+.m-dropdown-item{
+    transition: margin-right 200ms;
+}
+.m-dropdown-item:hover{
+    color: #a200ff;
+    background-color: white;
+    margin-right: 5px;
 }

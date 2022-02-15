@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,55 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Project</title>
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">myProject.com</a>
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-lg-0 d-flex align-items-center">
+                    <!-- ITEM 1 -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">صفحه ی اصلی</a>
+                    </li>
+                    
+                    <!-- ITEM 2 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">
+                            محصولات
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item m-dropdown-item" href="#">
+                                <i class="bi bi-box me-1"></i>
+                                محصول اول
+                            </a></li>
+                            <li><a class="dropdown-item m-dropdown-item" href="#">
+                                <i class="bi bi-box me-1"></i>
+                                محصول دوم
+                            </a></li>
+                            <li><a class="dropdown-item m-dropdown-item" href="#">
+                                <i class="bi bi-box me-1"></i>
+                                محصول سوم
+                            </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- ITEM 3 -->
+                    <li class="nav-item"><a class="nav-link" href="#">تماس با ما</a></li>
+                    
+                    <!-- ITEM 4 -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">درباره ما</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </body>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
