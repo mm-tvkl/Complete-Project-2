@@ -51,3 +51,7 @@
 .small-scale-hover:hover{
     transform: scale(.9);
 }
+
+.bg-footer{
+    background-color: #d6d6d6;
+}

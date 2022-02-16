@@ -75,3 +75,51 @@ body{
         border: 1px solid #cacaca;
     }
 }
+
+.link-icon{
+    color: black;
+    display: inline-block;
+}
+
+.icon1:hover{color: #94001e;}
+.icon2:hover{color: green;}
+.icon3:hover{color: #009dff;}
+.icon4:hover{color: #0077ff;}
+
+.m-border-bottom{
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+}
+
+.footer-link{
+    color: black;
+    text-decoration: none;
+    transition: color 200ms , margin-right 200ms;
+    position: relative;
+}
+.footer-link:hover{
+    color: crimson;
+    margin-right: 5px;
+}
+
+.footer-link::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: #a200ff;
+    display: block;
+    top: 26px;
+    right: 0;
+    transition: width 200ms;
+}
+
+
+.footer-link:hover.footer-link::before{
+    content: "";
+    width: 20px;
+    background-color: #a200ff;
+    display: block;
+    bottom: 0;
+    right: 0;
+}
