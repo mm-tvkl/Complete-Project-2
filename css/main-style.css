@@ -39,3 +39,7 @@
 .shadow-hover:hover{
     box-shadow: 0 0 20px #2f004b75;
 }
+
+.bg-main{
+    background-color: #2f004b;
+}
