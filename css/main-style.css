@@ -43,3 +43,11 @@
 .bg-main{
     background-color: #2f004b;
 }
+
+.small-scale-hover{
+    transition: transform 200ms;
+}
+
+.small-scale-hover:hover{
+    transform: scale(.9);
+}

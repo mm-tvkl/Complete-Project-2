@@ -224,10 +224,11 @@
     </section>
 
     <!-- Section 3 - Slider -->
-    <section>
+    <section style="width: 100%;">
         <div style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M-55.01,72.55 C136.29,176.16 295.99,9.39 600.17,92.28 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #2f004b;"></path>
+                <path d="M-55.01,72.55 C136.29,176.16 295.99,9.39 600.17,92.28 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #2f004b;"></path>
             </svg>
         </div>
         <div class="bg-main">
@@ -240,9 +241,12 @@
                 <div class="row">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"class="active"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="2"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="4000">
@@ -276,12 +280,45 @@
         </div>
         <div style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill:#2f004b;"></path>
+                <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+                    style="stroke: none; fill:#2f004b;"></path>
             </svg>
+        </div>
+    </section>
+
+    <!-- Section 4 - Tech -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="row gy-5 text-center">
+                <div class="col-sm-6 col-lg-2">
+                    <img class="img-fluid small-scale-hover" src="./img/icon-1.svg" width="90" alt="بوت استرپ" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bootstrap">
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <img class="img-fluid small-scale-hover" src="./img/icon-2.svg" width="90" alt="لاراول" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Laravel">
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <img class="img-fluid small-scale-hover" src="./img/icon-3.svg" width="90" alt="نود جی اس" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Node Js">
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <img class="img-fluid small-scale-hover" src="./img/icon-4.svg" width="90" alt="پایتون" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Python">
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <img class="img-fluid small-scale-hover" src="./img/icon-5.svg" width="90" alt="گیت هاب" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Github">
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <img class="img-fluid small-scale-hover" src="./img/icon-6.svg" width="90" alt="گیت لب" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitLab">
+                </div>
+            </div>
         </div>
     </section>
 
 </body>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
 
 </html>
