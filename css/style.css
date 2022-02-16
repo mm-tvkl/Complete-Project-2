@@ -123,3 +123,46 @@ body{
     bottom: 0;
     right: 0;
 }
+
+.responsiv-nav-link:link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.responsiv-nav-link:active{
+    color: purple;
+}
+
+.responsiv-nav-link:visited{
+    color: black;
+}
+
+.responsiv-nav-link-item{
+    color: black;
+    text-decoration: none;
+}
+
+.m-border-start{
+    border-right: 2px solid #a200ff;
+}
+
+.bg-image-nav{
+    background: url("../img/Checklist\ _Monochromatic.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.menu-btn{
+    background-color: #a200ff;
+    padding: 7px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.menu-btn:focus{
+    box-shadow: none;
+}
