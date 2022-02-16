@@ -31,3 +31,11 @@
 .bg-light-purple{
     background-color: #f1e1ff;
 }
+
+.shadow-hover{
+    transition: box-shadow 200ms;
+}
+
+.shadow-hover:hover{
+    box-shadow: 0 0 20px #2f004b75;
+}
