@@ -57,3 +57,21 @@ body{
     padding: 10px;
     border-radius: 15px;
 }
+
+/* Section 2 Style */
+
+.m-card{
+    border-radius: 0;
+    border: 0;
+    transition: box-shadow 200ms;
+}
+
+.m-card:hover{
+    box-shadow: 0px 0px 20px #d6d6d6;
+}
+
+@media screen and (max-width:767px) {
+    .m-card{
+        border: 1px solid #cacaca;
+    }
+}
