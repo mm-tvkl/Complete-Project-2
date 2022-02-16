@@ -167,3 +167,19 @@ body{
 .menu-btn:focus{
     box-shadow: none;
 }
+
+.goToTop{
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #a200ff;
+    z-index: 3;
+}
+
+@media screen and (max-width:648px) {
+    .goToTop{
+        left: 20px;
+        right: auto;
+    }
+}
