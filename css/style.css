@@ -79,6 +79,7 @@ body{
 .link-icon{
     color: black;
     display: inline-block;
+    transition: color 300ms;
 }
 
 .icon1:hover{color: #94001e;}
