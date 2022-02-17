@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap and Bootstrap Icon -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- main-stlye.css File -->
+    <link rel="stylesheet" href="../css/main-style.css">
+
+    <!-- My Style.css File -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>درباره ما</title>
+
+    <!-- About Us.css File -->
+    <link rel="stylesheet" href="../css/aboutUs.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav style="z-index: 4;"
+        class="navbar navbar-expand-md navbar-light bg-white shadow position-fixed top-0 end-0 start-0">
+        <div class="container">
+            <a class="navbar-brand" href="#">myProject.com</a>
+            <button data-bs-toggle="offcanvas" href="#offcanvasExample" class="menu-btn navbar-toggler" type="button">
+                <i class="bi bi-list text-white fs-2 d-flex"></i>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-lg-0 d-flex align-items-center">
+                    <!-- ITEM 1 -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">صفحه ی اصلی</a>
+                    </li>
+
+                    <!-- ITEM 2 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">
+                            محصولات
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item m-dropdown-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول اول
+                                </a></li>
+                            <li><a class="dropdown-item m-dropdown-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول دوم
+                                </a></li>
+                            <li><a class="dropdown-item m-dropdown-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول سوم
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- ITEM 3 -->
+                    <li class="nav-item"><a class="nav-link" href="#">تماس با ما</a></li>
+
+                    <!-- ITEM 4 -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">درباره ما</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Responsive Navbar -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+        id="offcanvasExample">
+        <!-- Menu Header and Title -->
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">منو وبسایت</h5>
+            <button type="button" class="menu-btn text-reset" data-bs-dismiss="offcanvas">
+                <i class="bi bi-x-lg d-flex text-white"></i>
+            </button>
+        </div>
+
+        <!-- Menu Content -->
+        <div class="offcanvas-body d-flex flex-column align-items-center bg-image-nav">
+            <ul class="list-unstyled">
+                <!-- ITEM 1 -->
+                <li class="my-3"><a class="responsiv-nav-link" href="#">صفحه ی اصلی</a></li>
+
+                <!-- ITEM 2 -->
+                <li class="my-3"><a class="responsiv-nav-link" data-bs-toggle="collapse" href="#collapseExample">
+                        محصولات
+                        <i class="bi bi-chevron-down"></i>
+                    </a></li>
+
+                <!-- Collapse Item -->
+                <div class="collapse" id="collapseExample">
+                    <div>
+                        <ul class="list-unstyled m-border-start">
+                            <!-- Collapse Item 1 -->
+                            <li class="my-2 ms-2">
+                                <a class="responsiv-nav-link-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول اول
+                                </a>
+                            </li>
+
+                            <!-- Collapse Item 2 -->
+                            <li class="my-2 ms-2">
+                                <a class="responsiv-nav-link-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول دوم
+                                </a>
+                            </li>
+
+                            <!-- Collpase Item 3 -->
+                            <li class="my-2 ms-2">
+                                <a class="responsiv-nav-link-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول سوم
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ITEM 3 -->
+                <li class="my-3"><a class="responsiv-nav-link" href="#">درباره ما</a></li>
+
+                <!-- ITEM 4 -->
+                <li class="my-3"><a class="responsiv-nav-link" href="#">تماس با ما</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
+</html>
