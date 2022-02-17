@@ -50,3 +50,13 @@
 .btn-redit{
     background-color: #f26322;
 }
+
+.card-scale-animation{
+    transition: transform 200ms;
+    border: none;
+    border-radius: 0;
+}
+
+.card-scale-animation:hover{
+    transform: scale(.9);
+}
