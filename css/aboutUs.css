@@ -60,3 +60,9 @@
 .card-scale-animation:hover{
     transform: scale(.9);
 }
+
+@media screen and (max-width:991px) {
+    .m-header{
+        margin-top: 100px;
+    }
+}
