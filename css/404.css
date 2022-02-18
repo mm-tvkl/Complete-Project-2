@@ -69,3 +69,12 @@ body{
     }
   }
   
+.m-dropdown-item-dark{
+  color: lightblue;
+  
+}
+
+.m-dropdown-item-dark:hover{
+  background-color: transparent;
+  color: #d48aff;
+}
