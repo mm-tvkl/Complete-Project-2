@@ -19,3 +19,24 @@ body{
         margin-top: 100px;
     }
 }
+
+.m-input{
+    box-shadow: none;
+    transition: border 300ms;
+    border: 2px solid #a200ff;
+}
+
+.m-textarea-input{
+    border: 2px solid #a200ff;
+    transition: border 300ms;
+}
+
+.m-textarea-input:focus{
+    box-shadow: none;
+    border: 2px solid #0084ff;
+}
+
+.m-input:focus{
+    box-shadow: none;
+    border: 2px solid #0084ff;
+}
