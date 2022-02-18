@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap and Bootstrap Icon -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- main-stlye.css File -->
+    <link rel="stylesheet" href="../css/main-style.css">
+
+    <!-- My Style.css File -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Contact Us.css File -->
+    <link rel="stylesheet" href="../css/contactUs.css">
+    <title>ارتباط با ما</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav style="z-index: 4;"
+        class="navbar navbar-expand-md navbar-light bg-white shadow position-fixed top-0 end-0 start-0">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">myProject.com</a>
+            <button data-bs-toggle="offcanvas" href="#offcanvas1" class="menu-btn navbar-toggler" type="button">
+                <i class="bi bi-list text-white fs-2 d-flex"></i>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-lg-0 d-flex align-items-center">
+                    <!-- ITEM 1 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">صفحه ی اصلی</a>
+                    </li>
+
+                    <!-- ITEM 2 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">
+                            محصولات
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item m-dropdown-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول اول
+                                </a></li>
+                            <li><a class="dropdown-item m-dropdown-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول دوم
+                                </a></li>
+                            <li><a class="dropdown-item m-dropdown-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول سوم
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- ITEM 3 -->
+                    <li class="nav-item"><a class="nav-link" href="#">تماس با ما</a></li>
+
+                    <!-- ITEM 4 -->
+                    <li class="nav-item">
+                        <a href="./aboutUs.html" class="nav-link active">درباره ما</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Responsive Navbar -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+        id="offcanvas1">
+        <!-- Menu Header and Title -->
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">منو وبسایت</h5>
+            <button type="button" class="menu-btn text-reset" data-bs-dismiss="offcanvas">
+                <i class="bi bi-x-lg d-flex text-white"></i>
+            </button>
+        </div>
+
+        <!-- Menu Content -->
+        <div class="offcanvas-body d-flex flex-column align-items-center bg-image-nav">
+            <ul class="list-unstyled">
+                <!-- ITEM 1 -->
+                <li class="my-3"><a class="responsiv-nav-link" href="../index.html">صفحه ی اصلی</a></li>
+
+                <!-- ITEM 2 -->
+                <li class="my-3"><a class="responsiv-nav-link" data-bs-toggle="collapse" href="#collapseExample">
+                        محصولات
+                        <i class="bi bi-chevron-down"></i>
+                    </a></li>
+
+                <!-- Collapse Item -->
+                <div class="collapse" id="collapseExample">
+                    <div>
+                        <ul class="list-unstyled m-border-start">
+                            <!-- Collapse Item 1 -->
+                            <li class="my-2 ms-2">
+                                <a class="responsiv-nav-link-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول اول
+                                </a>
+                            </li>
+
+                            <!-- Collapse Item 2 -->
+                            <li class="my-2 ms-2">
+                                <a class="responsiv-nav-link-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول دوم
+                                </a>
+                            </li>
+
+                            <!-- Collpase Item 3 -->
+                            <li class="my-2 ms-2">
+                                <a class="responsiv-nav-link-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول سوم
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ITEM 3 -->
+                <li class="my-3"><a class="responsiv-nav-link" href="./aboutUs.html">درباره ما</a></li>
+
+                <!-- ITEM 4 -->
+                <li class="my-3"><a class="responsiv-nav-link" href="#">تماس با ما</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="container">
+            <div class="row justify-content-center margin-responsive">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="card p-0 shadow-lg">
+                        <div class="card-body py-0" style="padding: 0 12px;">
+                            <div class="row">
+                                <div class="col-lg-7 col-sm-12 px-0 order-sm-1 order-1 order-lg-0">
+                                    <div class="p-3">
+                                        <form action="#">
+                                            <h4 class="fw-bold mb-3">فرم ارسال پیام</h4>
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com">
+                                                <label for="floatingInput">آدرس ایمیل</label>
+                                            </div>
+                                            <div class="form-floating my-3">
+                                                <input type="text" class="form-control" id="floatingPassword"
+                                                    placeholder="Password">
+                                                <label for="floatingPassword">نام و نام خانوادگی</label>
+                                            </div>
+                                            <div class="form-floating">
+                                                <textarea class="form-control" style="height: 200px;" id="floatingTextarea"
+                                                    placeholder="Password"></textarea>
+                                                <label for="floatingTextarea">متن کامنت</label>
+                                            </div>
+                                            <div class="d-grid mt-3">
+                                                <input type="submit" class="btn btn-outline-purple" value="ارسال فرم">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-lg-5 d-flex justify-content-center align-items-center col-sm-12 px-0 bg-contact order-sm-0 order-0 order-lg-1">
+                                    <img width="90%" class="img-fluid" src="../img/contactus.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M-24.54,80.44 C245.77,184.05 589.45,56.75 556.15,86.36 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #d6d6d6;"></path>
+            </svg></div>
+        <div class="container-fluid bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 my-4">
+                        <h3 class="fw-bolder">myProject.com</h3>
+                        <p class="my-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                            گرافیک است</p>
+                        <a href="../html/404.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"
+                            class="me-2 link-icon icon1"><i class="bi bi-instagram fs-2"></i></a>
+                        <a href="../html/404.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Whatsapp"
+                            class="mx-2 link-icon icon2"><i class="bi bi-whatsapp fs-2"></i></a>
+                        <a href="../html/404.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"
+                            class="mx-2 link-icon icon3"><i class="bi bi-twitter fs-2"></i></a>
+                        <a href="../html/404.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram"
+                            class="mx-2 link-icon icon4"><i class="bi bi-telegram fs-2"></i></a>
+                    </div>
+                    <div class="col-lg-8 my-4">
+                        <div class="row gy-5">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <h5 class="m-border-bottom fw-bolder text-purple">بخش های وبسایت</h5>
+                                <a href="#" class="d-block my-2 footer-link">صفحه ی اصلی</a>
+                                <a href="#" class="d-block my-2 footer-link">محصولات</a>
+                                <a href="#" class="d-block my-2 footer-link">گالری</a>
+                                <a href="#" class="d-block my-2 footer-link">پشتیبانی</a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <h5 class="m-border-bottom fw-bolder text-purple">محصولات</h5>
+                                <a href="#" class="d-block my-2 footer-link">محصول اول</a>
+                                <a href="#" class="d-block my-2 footer-link">محصول دوم</a>
+                                <a href="#" class="d-block my-2 footer-link">محصول سوم</a>
+                                <a href="#" class="d-block my-2 footer-link">محصول چهارم</a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <h5 class="m-border-bottom fw-bolder text-purple">درباره ما</h5>
+                                <a href="#" class="d-block my-2 footer-link">تماس با ما</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</html>

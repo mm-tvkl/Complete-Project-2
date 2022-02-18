@@ -1,0 +1,21 @@
+body{
+    height: 100vh;
+}
+
+.bg-contact{
+    background: rgb(175,0,255);
+    background: linear-gradient(138deg, rgba(175,0,255,1) 0%, rgba(171,0,135,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.margin-responsive{
+    margin-top: 150px;
+}
+
+@media screen and (max-width:991px) {
+    .margin-responsive{
+        margin-top: 100px;
+    }
+}
