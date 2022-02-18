@@ -14,6 +14,117 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav style="z-index: 4;"
+        class="navbar navbar-expand-md navbar-dark bg-dark shadow position-fixed top-0 end-0 start-0">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">myProject.com</a>
+            <button data-bs-toggle="offcanvas" href="#offcanvasExample" class="menu-btn navbar-toggler" type="button">
+                <i class="bi bi-list text-white fs-2 d-flex"></i>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-lg-0 d-flex align-items-center">
+                    <!-- ITEM 1 -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">صفحه ی اصلی</a>
+                    </li>
+
+                    <!-- ITEM 2 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">
+                            محصولات
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item m-dropdown-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول اول
+                                </a></li>
+                            <li><a class="dropdown-item m-dropdown-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول دوم
+                                </a></li>
+                            <li><a class="dropdown-item m-dropdown-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول سوم
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- ITEM 3 -->
+                    <li class="nav-item"><a class="nav-link" href="./html/contactUs.html">تماس با ما</a></li>
+
+                    <!-- ITEM 4 -->
+                    <li class="nav-item">
+                        <a href="./html/aboutUs.html" class="nav-link">درباره ما</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Responsive Navbar -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+        id="offcanvasExample">
+        <!-- Menu Header and Title -->
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">منو وبسایت</h5>
+            <button type="button" class="menu-btn text-reset" data-bs-dismiss="offcanvas">
+                <i class="bi bi-x-lg d-flex text-white"></i>
+            </button>
+        </div>
+
+        <!-- Menu Content -->
+        <div class="offcanvas-body d-flex flex-column align-items-center bg-image-nav">
+            <ul class="list-unstyled">
+                <!-- ITEM 1 -->
+                <li class="my-3"><a class="responsiv-nav-link" href="index.html">صفحه ی اصلی</a></li>
+
+                <!-- ITEM 2 -->
+                <li class="my-3"><a class="responsiv-nav-link" data-bs-toggle="collapse" href="#collapseExample">
+                        محصولات
+                        <i class="bi bi-chevron-down"></i>
+                    </a></li>
+
+                <!-- Collapse Item -->
+                <div class="collapse" id="collapseExample">
+                    <div>
+                        <ul class="list-unstyled m-border-start">
+                            <!-- Collapse Item 1 -->
+                            <li class="my-2 ms-2">
+                                <a class="responsiv-nav-link-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول اول
+                                </a>
+                            </li>
+
+                            <!-- Collapse Item 2 -->
+                            <li class="my-2 ms-2">
+                                <a class="responsiv-nav-link-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول دوم
+                                </a>
+                            </li>
+
+                            <!-- Collpase Item 3 -->
+                            <li class="my-2 ms-2">
+                                <a class="responsiv-nav-link-item" href="#">
+                                    <i class="bi bi-box me-1"></i>
+                                    محصول سوم
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ITEM 3 -->
+                <li class="my-3"><a class="responsiv-nav-link" href="./html/aboutUs.html">درباره ما</a></li>
+
+                <!-- ITEM 4 -->
+                <li class="my-3"><a class="responsiv-nav-link" href="./html/contactUs.html">تماس با ما</a></li>
+            </ul>
+        </div>
+    </div>
+    
     <section class="backdark">
         <div class="container">
             <div class="row text-center">
